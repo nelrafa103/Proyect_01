@@ -1,5 +1,6 @@
 entry = input()
-print(hola)
+import os
+
 class properies(object):
     def __init__(self, x, y, color):
         self.x = x
@@ -17,7 +18,11 @@ class properies(object):
             i += 1
             print(i)
 
-#duck
+    def substration(self, duck):
+        self.x = self.x - duck.x
+# duck
+
+
 class rubber_duck(properies):
     def message(self):
         self.toy()
@@ -26,11 +31,23 @@ class rubber_duck(properies):
             print('This is a new game')
         else:
             print('Im sorry,but you duck is it a toy')
-        print(self.color)
+            print(self.color)
 
 
-#class real_duck(properies)
-# def duck(self):
-# if
-d = rubber_duck(30, 20, entry)
-d.message()
+toys_ducks = rubber_duck(30, 20, 9)
+
+
+class real_duck(properies):
+    os.system('clear')
+    def duck(self,number):
+        if self.game :
+            if self.x > 0:
+             print ('This duck is real' + 'and' + 'its' + ' ' + str(self.x))
+             return self.duck(self.substration(toys_ducks))
+            else:
+             return 'Im sorry but you duck die'
+        else:
+            return (toys_ducks.message())
+
+true_duck = real_duck(int(entry), 20, entry)
+print(true_duck.duck(true_duck.x))
