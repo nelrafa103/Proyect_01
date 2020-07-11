@@ -15,4 +15,4 @@ def order_numbers(list_1):
     return order_numbers(list_1)
 
 
-order_numbers([200, 5, 2, 3, 4, 6, 1, 6, 100,0])
+print(order_numbers([200, 5, 2, 3, 4, 6, 1, 6, 100,0]))
